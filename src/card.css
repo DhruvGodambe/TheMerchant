@@ -1,0 +1,46 @@
+.block {
+	padding: 0;
+	margin: 20px auto;
+	border-radius: 20px;
+	width: 500px;
+	text-align: left;
+	box-shadow: 0 0 10px #888888;
+	background: grey;
+	color: white;
+	cursor: pointer;
+}
+
+.block:hover {
+	box-shadow: 0 0 30px #888888;
+	width: 520px;
+	transition: 0.5s;
+	padding: 0 0 20px 0;
+}
+
+.info {
+	margin: 40px 10px;
+}
+
+img {
+	border-radius: 20px 20px 0 0;
+	width: inherit;
+	max-height: 700px;
+}
+
+@media only screen and (max-width: 600px){
+	.block {
+		margin: 20px auto;
+		width: 80%;
+	}
+
+	img {
+		width: 100%;
+	}
+
+	.block:hover {
+		box-shadow: 0 0 30px #888888;
+		width: 83%;
+		transition: 0.3s;
+		padding: 0 0 20px 0;
+	}
+}

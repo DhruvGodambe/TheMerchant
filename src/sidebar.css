@@ -1,0 +1,26 @@
+.sidebar {
+	background: grey;
+	position: fixed;
+	right: 0;
+	top: 60px;
+	height: 100%;
+	width: 60%;
+	color: black;
+	box-shadow: 1px 10px 5px black;
+	padding: 0;
+	display: flex;
+	overflow: scroll;
+}
+
+.sidebar ul {
+	margin: 0;
+	padding: 0;
+}
+
+.sidebar li {
+	text-align: left;
+	width: 100%;
+	padding: 5%;
+	margin: 0;
+	height: 10%;
+}

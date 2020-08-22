@@ -1,0 +1,138 @@
+.navbar {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	background: linear-gradient(90deg,black, lightgrey, black);
+	color: white;
+	height: 83px;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+.changed {
+	display: flex;
+	flex-direction: row;
+	width: 37%;
+	height: inherit;
+}
+
+.subtitle {
+	text-align: center;
+	margin-top: 5px;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+ul {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: inherit;
+}
+
+li {
+	width: 33%;
+	list-style-type: none;
+	font-size: 20px;
+	cursor: pointer;
+	padding-top: 5%;	
+}
+
+li:hover {
+	background: lightgrey;
+	color: black;
+	transition: 0.5s;
+}
+
+.title {
+	width: 25%;
+	font-size: 40px;
+	padding-top: 0;
+	color: black;
+	cursor: pointer;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.hamburger {
+	display: none;
+}
+
+.auth {
+	display: flex;
+	flex-flow: row-reverse;
+	width: 38%;
+}
+
+.right {
+	margin-left: 100px;
+	width: 80%;
+
+}
+
+.right li {
+	width: 50%;
+}
+
+.active p {
+	width: 70%;
+	font-size: 20px;
+}
+
+.active button {
+	font-size: 15px;
+	border: none;
+	border-radius: 10px;
+	height: 40px;	
+	width: 20%;
+	margin: 5% auto;
+	cursor: pointer;
+}
+
+.active button:hover {
+	background: grey;
+	color: white;
+}
+
+@media only screen and (max-width: 720px){
+	.navbar {
+		background: black;
+		display: flex;
+		color: white;
+		height: 60px;
+	}
+
+	.changed {
+		display: none;
+	}
+
+	.title {
+		width: 90%;
+		font-size: 30px;
+		color: inherit;
+	}
+
+	.hamburger {
+		width: 12%;
+		display: flex;
+		float: right;
+		height: inherit;
+		width: 50px;
+		background: lightgrey;
+	}
+
+	.hamburger img {
+		width: 100%;
+	}
+
+	.auth {
+		display: none;
+	}
+}

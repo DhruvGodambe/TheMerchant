@@ -1,0 +1,41 @@
+.container-one {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin: 100px auto;
+	width: 1000px;
+}
+
+.details {
+	width: 23%;
+	text-align: left;
+	margin-right: 0.5%;
+	padding: 0.5%;
+	border: 2px solid lightgrey;
+	border-radius: 20px;
+	background: lightgrey;
+}
+
+.image {
+	width: 75%;
+}
+
+img {
+	width: 100%;
+	border-radius: 20px;
+}
+
+@media only screen and (max-width: 720px) {
+	.container-one {
+		width: 90%;
+	}
+
+	.details {
+		width: 100%;
+		margin: 20px 0;
+	}
+
+	.image {
+		margin: 0 auto;
+	}
+}
